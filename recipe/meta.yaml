@@ -1,6 +1,6 @@
 {% set name = "finitediff" %}
-{% set version = "0.5.3" %}
-{% set sha256 = "e25a23254cc165e9d988d2ee1b479cb71b88d59bfb34fabef9cce28646e43770" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "3d18b39ae0a510e209ad414a87015ec1d7caa46e71f31c91d563e5e7e5f344d3" %}
 
 package:
   name: {{ name|lower }}
