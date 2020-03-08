@@ -1,6 +1,6 @@
 {% set name = "finitediff" %}
-{% set version = "0.6.2" %}
-{% set sha256 = "c0ac3607c9f5211d6e9125f1a300422f85b3a898cb5d3c62185ec94affac2ab0" %}
+{% set version = "0.6.3" %}
+{% set sha256 = "cdf2d90023b79323cfa375876f3b99b8530680cfa2ff356e44897c74f7e903f9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -40,7 +40,7 @@ about:
   home: https://github.com/bjodah/{{ name }}
   license: BSD 2-Clause
   license_file: LICENSE
-  summary: 'Finite difference weights for any derivative order on arbitrarily spaced grids'
+  summary: Finite difference weights for any derivative order on arbitrarily spaced grids
   doc_url: https://bjodah.github.io/{{ name }}/latest
 
 extra:
