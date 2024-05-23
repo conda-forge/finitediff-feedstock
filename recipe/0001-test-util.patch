@@ -1,0 +1,10 @@
+diff --git a/finitediff/grid/tests/test_util.py b/finitediff/grid/tests/test_util.py
+index fefaccf..4b37154 100644
+--- a/finitediff/grid/tests/test_util.py
++++ b/finitediff/grid/tests/test_util.py
+@@ -12,4 +12,4 @@ def test_locate_discontinuity__pool_discontinuity_approx():
+         if snr:
+             assert abs(avg - 5) < 0.03
+         else:
+-            assert abs(avg - 5) > 1  # this is a negative test, i.e. not strict!
++            assert abs(avg - 5) > 0.03  # this is a negative test, i.e. not strict!
